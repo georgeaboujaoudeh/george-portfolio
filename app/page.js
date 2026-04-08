@@ -71,18 +71,18 @@ export default function Home() {
           }}>
             View Experience
           </a>
-<a href="/George CV - 2026.pdf" download style={{
-  background: 'transparent',
-  color: '#666',
-  border: '0.5px solid #2a2a2a',
-  padding: '12px 28px',
-  borderRadius: '8px',
-  fontSize: '14px',
-  cursor: 'pointer',
-  textDecoration: 'none'
-}}>
-  Download CV
-</a>
+          <a href="/George CV - 2026.pdf" download style={{
+            background: 'transparent',
+            color: '#666',
+            border: '0.5px solid #2a2a2a',
+            padding: '12px 28px',
+            borderRadius: '8px',
+            fontSize: '14px',
+            cursor: 'pointer',
+            textDecoration: 'none'
+          }}>
+            Download CV
+          </a>
           <a href="mailto:georgeaboujaoudeh@outlook.com" style={{
             background: 'transparent',
             color: '#666',
@@ -117,25 +117,25 @@ export default function Home() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
+      {/* <section id="about" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
         <p style={{ fontSize: '11px', color: '#f0a500', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>About</p>
         <h2 style={{ fontSize: '36px', fontWeight: 700, marginBottom: '24px', maxWidth: '640px', lineHeight: 1.2 }}>
           Self-taught. Battle-tested.<br />Prague-bound.
         </h2>
         <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
-          I graduated with a Business Management degree in 2021 and taught myself SQL and data science from scratch. 
+          I graduated with a Business Management degree in 2021 and taught myself SQL and data science from scratch.
           No bootcamp, no CS degree — just curiosity and consistency.
         </p>
         <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
-          That landed me a BI Developer role at Globemed Group, where I built ETL pipelines and dashboards 
-          across HR, finance, and management. Then Cardinal Health came calling — where I now design 
+          That landed me a BI Developer role at Globemed Group, where I built ETL pipelines and dashboards
+          across HR, finance, and management. Then Cardinal Health came calling — where I now design
           executive Looker dashboards and scalable data models tracking patient safety and financial KPIs.
         </p>
         <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8 }}>
-          In September 2025, I'm starting my Masters in Business Analytics in Prague — 
+          In September 2025, I'm starting my Masters in Business Analytics in Prague —
           doubling down on the intersection of data, strategy, and impact.
         </p>
-      </section>
+      </section> */}
 
       {/* STACK */}
       <section id="stack" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
@@ -258,9 +258,9 @@ export default function Home() {
             textDecoration: 'none'
           }}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#666" style={{ marginRight: '8px', verticalAlign: 'middle' }}>
-            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-          </svg>
-          LinkedIn
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+            LinkedIn
           </a>
         </div>
       </section>
