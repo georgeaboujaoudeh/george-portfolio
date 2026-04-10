@@ -246,7 +246,7 @@ export default function Home() {
           </div>
         ))}
       </section>
-
+      <Terminal />
       {/* CONTACT */}
       <section id="contact" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
         <p style={{ fontSize: '11px', color: '#f0a500', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Contact</p>
