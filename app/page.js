@@ -2,6 +2,7 @@
 import dynamic from 'next/dynamic';
 import ThemeToggle from './ThemeToggle';
 import ParticleBackground from './ParticleBackground';
+import Terminal from './Terminal';
 const Chart3D = dynamic(() => import('./Chart3D'), { ssr: false });
 
 export default function Home() {
