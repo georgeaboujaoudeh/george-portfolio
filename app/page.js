@@ -1,5 +1,6 @@
 'use client';
 import dynamic from 'next/dynamic';
+import ThemeToggle from './ThemeToggle';
 import ParticleBackground from './ParticleBackground';
 const Chart3D = dynamic(() => import('./Chart3D'), { ssr: false });
 
@@ -30,6 +31,18 @@ export default function Home() {
             </a>
           ))}
         </div>
+        <div style={{ display: 'flex', gap: '32px' }}>
+          {['About', 'Stack', 'Experience', 'Contact'].map(link => (
+            <a key={link} href={`#${link.toLowerCase()}`} style={{
+              color: '#666',
+              textDecoration: 'none',
+              fontSize: '14px'
+            }}>
+              {link}
+            </a>
+          ))}
+        </div>
+        <ThemeToggle />
       </nav>
 
       {/* HERO */}
