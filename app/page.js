@@ -1,11 +1,13 @@
 'use client';
 import dynamic from 'next/dynamic';
+import ParticleBackground from './ParticleBackground';
 const Chart3D = dynamic(() => import('./Chart3D'), { ssr: false });
 
 export default function Home() {
   return (
     <main style={{ minHeight: '100vh', padding: '0 60px', maxWidth: '1200px', margin: '0 auto' }}>
-
+      <ParticleBackground />
+      <div style={{ position: 'relative', zIndex: 1 }}>
       {/* NAVBAR */}
       <nav style={{
         display: 'flex',
@@ -270,7 +272,7 @@ export default function Home() {
         <span style={{ fontSize: '13px', color: '#333' }}>© 2026 George Abou Jaoude</span>
         <span style={{ fontSize: '13px', color: '#333' }}>Beirut, Lebanon</span>
       </footer>
-
+      </div>
     </main>
   );
 }
