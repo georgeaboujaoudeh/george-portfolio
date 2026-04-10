@@ -124,14 +124,22 @@ export default function Terminal() {
         </div>
 
         {/* Terminal body */}
-        <div style={{
-          padding: '20px',
-          fontFamily: 'monospace',
-          fontSize: '13px',
-          lineHeight: '1.8',
-          height: '340px',
-          overflowY: 'auto',
-        }}>
+        <div
+          onWheel={(e) => e.stopPropagation()}
+          onKeyDown={(e) => {
+            if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'PageUp' || e.key === 'PageDown') {
+              e.stopPropagation();
+            }
+          }}
+          style={{
+            padding: '20px',
+            fontFamily: 'monospace',
+            fontSize: '13px',
+            lineHeight: '1.8',
+            height: '340px',
+            overflowY: 'auto',
+          }}
+        >
           {history.map((entry, i) => (
             <div key={i}>
               {entry.type === 'input' && (
