@@ -32,17 +32,6 @@ export default function Home() {
             </a>
           ))}
         </div>
-        <div style={{ display: 'flex', gap: '32px' }}>
-          {['About', 'Stack', 'Experience', 'Contact'].map(link => (
-            <a key={link} href={`#${link.toLowerCase()}`} style={{
-              color: '#666',
-              textDecoration: 'none',
-              fontSize: '14px'
-            }}>
-              {link}
-            </a>
-          ))}
-        </div>
         <ThemeToggle />
       </nav>
 
