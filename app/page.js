@@ -11,7 +11,7 @@ export default function Home() {
       <ParticleBackground />
       <div style={{ position: 'relative', zIndex: 1 }}>
       {/* NAVBAR */}
-      <nav style={{
+<nav style={{
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -21,7 +21,7 @@ export default function Home() {
         <span style={{ color: '#f0a500', fontSize: '15px', fontWeight: 500 }}>
           George Abou Jaoude
         </span>
-        <div style={{ display: 'flex', gap: '32px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
           {['About', 'Stack', 'Experience', 'Contact'].map(link => (
             <a key={link} href={`#${link.toLowerCase()}`} style={{
               color: '#666',
@@ -31,8 +31,8 @@ export default function Home() {
               {link}
             </a>
           ))}
+          <ThemeToggle />
         </div>
-        <ThemeToggle />
       </nav>
 
       {/* HERO */}
@@ -122,25 +122,29 @@ export default function Home() {
       </section>
 
       {/* ABOUT */}
-      {/* <section id="about" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
+      <section id="about" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
         <p style={{ fontSize: '11px', color: '#f0a500', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>About</p>
         <h2 style={{ fontSize: '36px', fontWeight: 700, marginBottom: '24px', maxWidth: '640px', lineHeight: 1.2 }}>
-          Self-taught. Battle-tested.<br />Prague-bound.
+          My journey through Analytics.
         </h2>
         <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
-          I graduated with a Business Management degree in 2021 and taught myself SQL and data science from scratch.
-          No bootcamp, no CS degree — just curiosity and consistency.
+          Analytics Engineer with a background in Business Management, specialized in building scalable 
+          data models and decision-focused dashboards.    
+        </p>    
+        <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
+          I transitioned into data by self-learning SQL and analytics, which led to a BI Developer role 
+          at Globemed Group. There, I built ETL pipelines and delivered dashboards across HR, finance, and operations 
+          — enabling teams to make faster, data-driven decisions.
         </p>
         <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
-          That landed me a BI Developer role at Globemed Group, where I built ETL pipelines and dashboards
-          across HR, finance, and management. Then Cardinal Health came calling — where I now design
-          executive Looker dashboards and scalable data models tracking patient safety and financial KPIs.
+          Currently at Cardinal Health, I design executive-level Looker dashboards and data models focused on patient safety, 
+          financial performance, and compliance metrics.
         </p>
         <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8 }}>
-          In September 2025, I'm starting my Masters in Business Analytics in Prague —
-          doubling down on the intersection of data, strategy, and impact.
+          In September 2025, I will begin a Master’s in Business Analytics in Prague, 
+          further strengthening my focus on the intersection of data, strategy, and real-world impact.
         </p>
-      </section> */}
+      </section>
 
       {/* STACK */}
       <section id="stack" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>

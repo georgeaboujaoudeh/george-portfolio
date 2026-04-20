@@ -65,9 +65,13 @@ export default function Terminal() {
   const bottomRef = useRef(null);
   const inputRef = useRef(null);
 
-  useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [history]);
+const terminalBodyRef = useRef(null);
+
+useEffect(() => {
+  if (history.length > 1 && terminalBodyRef.current) {
+    terminalBodyRef.current.scrollTop = terminalBodyRef.current.scrollHeight;
+  }
+}, [history]);
 
   const handleCommand = (e) => {
     if (e.key !== 'Enter') return;
@@ -125,6 +129,7 @@ export default function Terminal() {
 
         {/* Terminal body */}
         <div
+          ref={terminalBodyRef}
           onWheel={(e) => e.stopPropagation()}
           onKeyDown={(e) => {
             if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'PageUp' || e.key === 'PageDown') {
@@ -176,7 +181,6 @@ export default function Terminal() {
                 flex: 1,
                 caretColor: '#f0a500',
               }}
-              autoFocus
             />
           </div>
           <div ref={bottomRef} />
