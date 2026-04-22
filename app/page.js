@@ -116,7 +116,7 @@ export default function Home() {
         </div>
 
         <p style={{ fontSize: '11px', color: '#333', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>
-          Live 3D viz
+          Live 3D viz (I am also an athlete)
         </p>
         <Chart3D />
       </section>
@@ -189,10 +189,10 @@ export default function Home() {
             company: 'Cardinal Health',
             period: 'Nov 2023 – Present',
             bullets: [
-              'Built executive Looker dashboards tracking patient safety and financial KPIs.',
-              'Designed scalable data models and advanced LookML with caching and persistent derived tables.',
-              'Optimized complex SQL queries and supported data orchestration with Airflow.',
-              'Partnered with cross-functional teams to translate business requirements into analytics solutions.',
+              'Built and maintained 8+ executive Looker dashboards tracking patient safety and financial KPIs, used by 1,000+ stakeholders across multiple business units.',
+              'Designed scalable data models and advanced LookML implementations, leveraging persistent derived tables (PDTs) and caching to improve dashboard performance and reduce load times by up to 80%.',
+              'Optimized complex SQL queries on BigQuery datasets with millions of rows, significantly enhancing query efficiency and overall data pipeline performance.',
+              'Partnered with cross-functional teams to translate business requirements into scalable analytics solutions, enabling faster, data-driven decision-making impacting patient safety and operational performance.',
             ]
           },
           {
@@ -200,9 +200,11 @@ export default function Home() {
             company: 'Globemed Group',
             period: 'Jun 2022 – Nov 2023',
             bullets: [
-              'Developed QlikView, QlikSense, and Tableau dashboards for HR, finance, and management.',
-              'Designed and maintained ETL pipelines using Talend and Oracle PL/SQL.',
-              'Integrated BI tools with enterprise databases and supported Agile delivery using Jira.',
+              'Developed and maintained Qlik dashboards (including self-service solutions) used by insurance clients to monitor claims across millions of rows, while managing Qlik administration including user roles and access control.',
+              'Migrated dashboards from QlikView to QlikSense, improving performance and usability.',
+              'Built and optimized Talend ETL pipelines and Oracle (SQL/PLSQL) validation procedures, ensuring reliable and automated data workflows.',
+              'Improved Qlik data models and QVD scripts to reduce load times.',
+              'Developed an internal HR dashboard (Jira-based) for sprint and team performance tracking.'
             ]
           },
           {
