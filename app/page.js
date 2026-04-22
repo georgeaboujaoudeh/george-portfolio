@@ -116,7 +116,7 @@ export default function Home() {
         </div>
 
         <p style={{ fontSize: '11px', color: '#333', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>
-          Live 3D viz (I am also an athlete)
+          Live 3D viz
         </p>
         <Chart3D />
       </section>
