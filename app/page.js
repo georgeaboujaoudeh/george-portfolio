@@ -3,7 +3,6 @@ import dynamic from 'next/dynamic';
 import ThemeToggle from './ThemeToggle';
 import ParticleBackground from './ParticleBackground';
 import Terminal from './Terminal';
-import Image from 'next/image';
 
 const Chart3D = dynamic(() => import('./Chart3D'), { ssr: false });
 
@@ -274,12 +273,11 @@ export default function Home() {
         borderRadius: '16px',
         overflow: 'hidden',
       }}>
-        <div style={{ position: 'relative', width: '100%', height: '320px' }}>
-          <Image
+        <div style={{ position: 'relative', width: '100%', background: '#fff' }}>
+          <img
             src={project.image}
             alt={project.title}
-            fill
-            style={{ objectFit: 'cover', objectPosition: 'top' }}
+            style={{ width: '100%', height: 'auto', display: 'block' }}
           />
         </div>
         <div style={{ padding: '24px 28px' }}>
