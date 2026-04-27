@@ -140,10 +140,6 @@ export default function Home() {
           Currently at Cardinal Health, I design executive-level Looker dashboards and data models focused on patient safety, 
           financial performance, and compliance metrics.
         </p>
-        <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8 }}>
-          In September 2025, I will begin a Master’s in Business Analytics in Prague, 
-          further strengthening my focus on the intersection of data, strategy, and real-world impact.
-        </p>
       </section>
 
       {/* STACK */}

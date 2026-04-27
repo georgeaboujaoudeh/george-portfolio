@@ -40,8 +40,7 @@ const COMMANDS = {
     '  Aug 2021 – Dec 2021',
     '  Market analysis, forecasting, CAGR analysis',
   ],
-  education: () => [
-    '→ MSc Business Analytics — Prague (Sept 2025)',
+  education: () => [    
     '→ BA Business Management — Open University Beirut (2018–2021)',
     '   GPA: 3/4',
     '',
