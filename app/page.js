@@ -3,6 +3,8 @@ import dynamic from 'next/dynamic';
 import ThemeToggle from './ThemeToggle';
 import ParticleBackground from './ParticleBackground';
 import Terminal from './Terminal';
+import Image from 'next/image';
+
 const Chart3D = dynamic(() => import('./Chart3D'), { ssr: false });
 
 export default function Home() {
@@ -138,7 +140,7 @@ export default function Home() {
         </p>
         <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
           Currently at Cardinal Health, I design executive-level Looker dashboards and data models focused on patient safety, 
-          financial performance, and compliance metrics.
+          financial performance, compliance metrics and much more.
         </p>
       </section>
 
@@ -237,6 +239,70 @@ export default function Home() {
           </div>
         ))}
       </section>
+      {/* PROJECTS */}
+<section id="projects" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
+  <p style={{ fontSize: '11px', color: '#f0a500', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Projects</p>
+  <h2 style={{ fontSize: '36px', fontWeight: 700, marginBottom: '48px' }}>What I've shipped at Cardinal Health:</h2>
+
+  <div style={{ display: 'flex', flexDirection: 'column', gap: '48px' }}>
+    {[
+      {
+        title: 'Performance Dashboard — Patient Safety',
+        company: 'Cardinal Health',
+        description: 'Executive Looker dashboard tracking proactive expiration and recall management across hospital business units. Built with LookML, persistent derived tables and caching for performance at scale.',
+        tags: ['Looker', 'LookML', 'SQL', 'BigQuery'],
+        image: '/patient_safety_blurred.png',
+      },
+      {
+        title: 'Performance Dashboard — Annual Savings Calculator',
+        company: 'Cardinal Health',
+        description: 'Financial dashboard quantifying expiration and waste reduction savings across business units. Designed to support executive-level strategic decision making.',
+        tags: ['Looker', 'LookML', 'SQL', 'BigQuery'],
+        image: '/annual_savings_blurred.png',
+      },
+      {
+        title: 'Performance Dashboard — Financial',
+        company: 'Cardinal Health',
+        description: 'Inventory availability and reduction opportunities dashboard tracking on-hand cost, par cost, and inventory turns across RFID and bin products.',
+        tags: ['Looker', 'LookML', 'SQL', 'BigQuery'],
+        image: '/financial_blurred.png',
+      },
+    ].map((project, i) => (
+      <div key={i} style={{
+        background: '#0f0f0f',
+        border: '0.5px solid #1e1e1e',
+        borderRadius: '16px',
+        overflow: 'hidden',
+      }}>
+        <div style={{ position: 'relative', width: '100%', height: '320px' }}>
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            style={{ objectFit: 'cover', objectPosition: 'top' }}
+          />
+        </div>
+        <div style={{ padding: '24px 28px' }}>
+          <div style={{ fontSize: '11px', color: '#f0a500', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{project.company}</div>
+          <div style={{ fontSize: '18px', fontWeight: 600, color: '#fff', marginBottom: '12px' }}>{project.title}</div>
+          <div style={{ fontSize: '14px', color: '#555', lineHeight: 1.7, marginBottom: '16px' }}>{project.description}</div>
+          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+            {project.tags.map(tag => (
+              <span key={tag} style={{
+                background: '#1a1200',
+                border: '0.5px solid #f0a50044',
+                color: '#f0a500',
+                fontSize: '11px',
+                padding: '4px 12px',
+                borderRadius: '20px',
+              }}>{tag}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
       <Terminal />
       {/* CONTACT */}
       <section id="contact" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
