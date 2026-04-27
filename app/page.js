@@ -23,7 +23,7 @@ export default function Home() {
           George Abou Jaoude
         </span>
         <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
-          {['About', 'Stack', 'Experience', 'Contact'].map(link => (
+          {['About', 'Stack', 'Experience', 'Projects', 'Terminal', 'Contact'].map(link => (
             <a key={link} href={`#${link.toLowerCase()}`} style={{
               color: '#666',
               textDecoration: 'none',
@@ -301,7 +301,7 @@ export default function Home() {
     ))}
   </div>
 </section>
-      <Terminal />
+      <div id="terminal"><Terminal /></div>
       {/* CONTACT */}
       <section id="contact" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
         <p style={{ fontSize: '11px', color: '#f0a500', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Contact</p>
