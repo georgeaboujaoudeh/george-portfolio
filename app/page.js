@@ -38,6 +38,8 @@ export default function Home() {
 
         {/* HERO */}
         <section style={{ padding: '100px 0 80px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '48px' }}>
+            <div style={{ flex: 1 }}>
           <div style={{
             display: 'inline-block',
             background: '#1a1200',
@@ -62,6 +64,15 @@ export default function Home() {
             4+ years building BI systems, ETL pipelines, and executive dashboards
             across healthcare and enterprise — from Beirut to the world.
           </p>
+            </div>
+            <div style={{ flexShrink: 0 }}>
+              <img
+                src="/image_1_31.png"
+                alt="George Abou Jaoude"
+                style={{ width: '320px', height: '320px', objectFit: 'cover', borderRadius: '50%', display: 'block' }}
+              />
+            </div>
+          </div>
 
           <div style={{ display: 'flex', gap: '16px', marginBottom: '80px' }}>
             <a href="#experience" style={{
