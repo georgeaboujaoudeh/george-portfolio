@@ -61,7 +61,7 @@ export default function Home() {
           </h1>
 
           <p style={{ fontSize: '18px', color: '#555', maxWidth: '560px', lineHeight: 1.7, marginBottom: '40px' }}>
-            4+ years building BI systems, ETL pipelines, and executive dashboards
+            5+ years building BI systems, ETL pipelines, and executive dashboards
             across healthcare and enterprise — from Beirut to the world.
           </p>
             </div>
@@ -116,9 +116,9 @@ export default function Home() {
 
           <div style={{ display: 'flex', gap: '48px', marginBottom: '60px' }}>
             {[
-              { num: '4+', label: 'Years exp.' },
-              { num: '2', label: 'Companies' },
-              { num: '3', label: 'Languages' },
+              { num: '5+', label: 'Years exp.' },
+              { num: '3', label: 'Companies' },
+              { num: '4', label: 'Languages' },
             ].map(stat => (
               <div key={stat.label}>
                 <div style={{ fontSize: '28px', fontWeight: 700, color: '#f0a500' }}>{stat.num}</div>
@@ -140,17 +140,19 @@ export default function Home() {
             My journey through Analytics.
           </h2>
           <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
-            Analytics Engineer with a background in Business Management, specialized in building scalable
-            data models and decision-focused dashboards.
+            Senior Analytics Engineer with 5+ years of experience building scalable data models and production-grade
+            analytics solutions in healthcare and enterprise environments. Specialized in SQL, dbt, Looker, Power BI, Qlik,
+            BigQuery, and Airflow.
           </p>
           <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
             I transitioned into data by self-learning SQL and analytics, which led to a BI Developer role
-            at Globemed Group. There, I built ETL pipelines and delivered dashboards across HR, finance, and operations
-            — enabling teams to make faster, data-driven decisions.
+            at Globemed Group — building ETL pipelines and dashboards across HR, finance, and operations.
           </p>
           <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
-            Currently at Cardinal Health, I design executive-level Looker dashboards and data models focused on patient safety,
-            financial performance, compliance metrics and much more.
+            Currently at Cardinal Health designing executive-level Looker dashboards and data models focused on patient safety and financial performance. In parallel, I designed and built the full data layer for ADREA, an IoT-based equestrian facility management platform, from ERD design through Metabase dashboard delivery.
+          </p>
+          <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '0' }}>
+            Fluent in English, French, and Arabic — currently learning Czech ahead of my MSc in Business Analytics in Prague (Sept 2025).
           </p>
         </section>
 
@@ -161,11 +163,11 @@ export default function Home() {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
             {[
-              { cat: 'Data', tools: ['SQL', 'Python', 'PL-SQL', 'LookML', 'Oracle', 'BigQuery'] },
-              { cat: 'Analytics Engineering', tools: ['Data Modeling', 'Semantic Layer Design'] },
-              { cat: 'BI Tools', tools: ['Looker', 'Power BI', 'QlikSense', 'QlikView'] },
+              { cat: 'Data', tools: ['SQL', 'Python', 'dbt', 'PL-SQL', 'LookML', 'Oracle', 'BigQuery', 'Postgres'] },
+              { cat: 'Analytics Engineering', tools: ['Data Modeling', 'Semantic Layer Design', 'ERD / Schema Design', 'IoT / Sensor Data', 'Incremental Models'] },
+              { cat: 'BI Tools', tools: ['Looker', 'Power BI', 'QlikSense', 'QlikView', 'Metabase'] },
               { cat: 'ETL & Orchestration', tools: ['Airflow', 'Talend'] },
-              { cat: 'Tools', tools: ['Git', 'Jira'] },
+              { cat: 'Tools', tools: ['Git', 'Jira', 'Docker'] },
             ].map(group => (
               <div key={group.cat} style={{
                 display: 'grid',
@@ -212,6 +214,17 @@ export default function Home() {
                 'Designed scalable data models and advanced LookML implementations, leveraging persistent derived tables (PDTs) and caching to improve dashboard performance and reduce load times by up to 80%.',
                 'Optimized complex SQL queries on BigQuery datasets with millions of rows, significantly enhancing query efficiency and overall data pipeline performance.',
                 'Partnered with cross-functional teams to translate business requirements into scalable analytics solutions, enabling faster, data-driven decision-making impacting patient safety and operational performance.',
+              ]
+            },
+            {
+              role: 'Analytics Engineer — Side Project',
+              company: 'ADREA (Abu Dhabi Royal Equestrian Arts)',
+              period: 'Apr 2024 – May 2026',
+              bullets: [
+                'Designed and built an end-to-end Postgres schema (60+ tables) for an IoT-based facility management and animal welfare platform monitoring 46 horses across 4 stables, owning the full data layer from ERD design through dashboard delivery.',
+                'Modeled high-frequency sensor data (heart rate, vitals, body temperature, environmental readings) and AI-classified camera behavior signals into clean, query-ready tables supporting real-time monitoring and historical trend analysis.',
+                'Built a multi-tab Metabase dashboard suite (Stables, Horses, Camera AI, Anomaly Tracker) used by vets, trainers, and facility managers — including derived wellness scoring with week-over-week trend classification (IMPROVING / DECLINING) and per-stable environmental KPIs.',
+                'Operated within a 4-person team alongside cloud, infra, and mobile engineers, owning database architecture and analytics layer end-to-end.',
               ]
             },
             {
@@ -321,6 +334,56 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Personal Projects */}
+          <h2 style={{ fontSize: '36px', fontWeight: 700, marginTop: '80px', marginBottom: '48px' }}>Personal projects:</h2>
+
+          <div style={{
+            background: '#0f0f0f',
+            border: '0.5px solid #1e1e1e',
+            borderRadius: '16px',
+            overflow: 'hidden',
+          }}>
+            {/* Two images side by side */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', borderBottom: '0.5px solid #1e1e1e' }}>
+              <div style={{ borderRight: '0.5px solid #1e1e1e' }}>
+                <img
+                  src="/dashboard.png"
+                  alt="Garmin Metabase Dashboard"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
+              </div>
+              <div>
+                <img
+                  src="/airflow-dag.png"
+                  alt="Airflow DAG"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
+              </div>
+            </div>
+            <div style={{ padding: '24px 28px' }}>
+              <div style={{ fontSize: '11px', color: '#f0a500', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Personal Project</div>
+              <div style={{ fontSize: '18px', fontWeight: 600, color: '#fff', marginBottom: '12px' }}>Garmin Training Analytics</div>
+              <div style={{ fontSize: '14px', color: '#555', lineHeight: 1.7, marginBottom: '16px' }}>
+                End-to-end analytics pipeline on personal Garmin Connect data: Python ingestion → Postgres warehouse → dbt transformations → Metabase dashboard, orchestrated with Airflow. Authored 5 dbt models with incremental materialization, custom tests, and source freshness checks. Built a 10-tile dashboard surfacing training trends, recovery signals, and the insight that 55% of running sessions fell into the unproductive "gray zone."
+              </div>
+              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center' }}>
+                {['dbt', 'Postgres', 'Python', 'Metabase', 'Airflow', 'Docker'].map(tag => (
+                  <span key={tag} style={{
+                    background: '#1a1200',
+                    border: '0.5px solid #f0a50044',
+                    color: '#f0a500',
+                    fontSize: '11px',
+                    padding: '4px 12px',
+                    borderRadius: '20px',
+                  }}>{tag}</span>
+                ))}
+                <a href="https://github.com/georgeaboujaoudeh/garmin-analytics" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 'auto', fontSize: '12px', color: '#555', textDecoration: 'none', border: '0.5px solid #2a2a2a', padding: '4px 14px', borderRadius: '20px' }}>
+                  GitHub →
+                </a>
+              </div>
+            </div>
           </div>
         </section>
         <div id="terminal"><Terminal /></div>
