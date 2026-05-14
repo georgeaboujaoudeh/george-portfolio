@@ -14,10 +14,9 @@ const COMMANDS = {
   about: () => [
     'George Abou Jaoude — Senior Analytics Engineer',
     'Based in Beirut, Lebanon 🇱🇧',
-    '4+ years building scalable data models and analytics solutions.',
+    '5+ years building scalable data models and analytics solutions.',
     'Specialized in SQL, dbt, Looker, BigQuery, and Airflow.',
-    'Languages: English, French, Arabic, Czech (beginner).',
-    'MSc in Business Analytics — Prague, Sept 2025.',
+    'Languages: English, French, Arabic, Czech (beginner).'
   ],
   skills: () => [
     'Data:      SQL, Python, dbt, PL/SQL, LookML, Oracle, BigQuery, Postgres',
@@ -55,6 +54,7 @@ const COMMANDS = {
   contact: () => [
     'Email:    georgeaboujaoudeh@outlook.com',
     'LinkedIn: linkedin.com/in/george-abou-jaoude-7866181b3',
+    'Phone: +96176545531',
     'Location: Beirut, Lebanon',
   ],
 };
