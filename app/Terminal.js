@@ -14,7 +14,7 @@ const COMMANDS = {
   about: () => [
     'George Abou Jaoude — Senior Analytics Engineer',
     'Based in Beirut, Lebanon 🇱🇧',
-    '5+ years building scalable data models and analytics solutions.',
+    '4+ years building scalable data models and analytics solutions.',
     'Specialized in SQL, dbt, Looker, BigQuery, and Airflow.',
     'Languages: English, French, Arabic, Czech (beginner).'
   ],

@@ -61,7 +61,7 @@ export default function Home() {
           </h1>
 
           <p style={{ fontSize: '18px', color: '#555', maxWidth: '560px', lineHeight: 1.7, marginBottom: '40px' }}>
-            5+ years building BI systems, ETL pipelines, and executive dashboards
+            4+ years building BI systems, ETL pipelines, and executive dashboards
             across healthcare and enterprise — from Beirut to the world.
           </p>
             </div>
@@ -116,7 +116,7 @@ export default function Home() {
 
           <div style={{ display: 'flex', gap: '48px', marginBottom: '60px' }}>
             {[
-              { num: '5+', label: 'Years exp.' },
+              { num: '4+', label: 'Years exp.' },
               { num: '3', label: 'Companies' },
               { num: '4', label: 'Languages' },
             ].map(stat => (
@@ -140,7 +140,7 @@ export default function Home() {
             My journey through Analytics.
           </h2>
           <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
-            Senior Analytics Engineer with 5+ years of experience building scalable data models and production-grade
+            Senior Analytics Engineer with 4+ years of experience building scalable data models and production-grade
             analytics solutions in healthcare and enterprise environments. Specialized in SQL, dbt, Looker, Power BI, Qlik,
             BigQuery, and Airflow.
           </p>
