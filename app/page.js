@@ -88,7 +88,7 @@ export default function Home() {
             }}>
               View Experience
             </a>
-            <a href="/George CV - 2026.pdf" download style={{
+            <a href="/George Abou Jaoude Resume.pdf" download style={{
               background: 'transparent',
               color: '#666',
               border: '0.5px solid #2a2a2a',
