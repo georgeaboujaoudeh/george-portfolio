@@ -17,15 +17,15 @@ export default function Home() {
           justifyContent: 'space-between',
           alignItems: 'center',
           padding: '24px 0',
-          borderBottom: '0.5px solid #1e1e1e'
+          borderBottom: '0.5px solid var(--border)'
         }}>
-          <span style={{ color: '#f0a500', fontSize: '15px', fontWeight: 500 }}>
+          <span style={{ color: 'var(--gold)', fontSize: '15px', fontWeight: 500 }}>
             George Abou Jaoude
           </span>
           <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
             {['About', 'Stack', 'Experience', 'Projects', 'Terminal', 'Contact'].map(link => (
               <a key={link} href={`#${link.toLowerCase()}`} style={{
-                color: '#666',
+                color: 'var(--text-nav)',
                 textDecoration: 'none',
                 fontSize: '14px'
               }}>
@@ -42,9 +42,9 @@ export default function Home() {
             <div style={{ flex: 1 }}>
           <div style={{
             display: 'inline-block',
-            background: '#1a1200',
-            border: '0.5px solid #f0a500',
-            color: '#f0a500',
+            background: 'var(--gold-bg)',
+            border: '0.5px solid var(--gold-border)',
+            color: 'var(--gold)',
             fontSize: '11px',
             padding: '4px 14px',
             borderRadius: '20px',
@@ -57,10 +57,10 @@ export default function Home() {
 
           <h1 style={{ fontSize: '64px', fontWeight: 700, lineHeight: 1.1, marginBottom: '24px' }}>
             Turning data into<br />
-            <span style={{ color: '#f0a500' }}>decisions.</span>
+            <span style={{ color: 'var(--gold)' }}>decisions.</span>
           </h1>
 
-          <p style={{ fontSize: '18px', color: '#555', maxWidth: '560px', lineHeight: 1.7, marginBottom: '40px' }}>
+          <p style={{ fontSize: '18px', color: 'var(--text-secondary)', maxWidth: '560px', lineHeight: 1.7, marginBottom: '40px' }}>
             4+ years building BI systems, ETL pipelines, and executive dashboards
             across healthcare and enterprise — from Beirut to the world.
           </p>
@@ -90,8 +90,8 @@ export default function Home() {
             </a>
             <a href="/George Abou Jaoude Resume.pdf" download style={{
               background: 'transparent',
-              color: '#666',
-              border: '0.5px solid #2a2a2a',
+              color: 'var(--text-nav)',
+              border: '0.5px solid var(--border-btn)',
               padding: '12px 28px',
               borderRadius: '8px',
               fontSize: '14px',
@@ -102,8 +102,8 @@ export default function Home() {
             </a>
             <a href="mailto:georgeaboujaoudeh@outlook.com" style={{
               background: 'transparent',
-              color: '#666',
-              border: '0.5px solid #2a2a2a',
+              color: 'var(--text-nav)',
+              border: '0.5px solid var(--border-btn)',
               padding: '12px 28px',
               borderRadius: '8px',
               fontSize: '14px',
@@ -121,44 +121,44 @@ export default function Home() {
               { num: '4', label: 'Languages' },
             ].map(stat => (
               <div key={stat.label}>
-                <div style={{ fontSize: '28px', fontWeight: 700, color: '#f0a500' }}>{stat.num}</div>
-                <div style={{ fontSize: '11px', color: '#444', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '4px' }}>{stat.label}</div>
+                <div style={{ fontSize: '28px', fontWeight: 700, color: 'var(--gold)' }}>{stat.num}</div>
+                <div style={{ fontSize: '11px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '4px' }}>{stat.label}</div>
               </div>
             ))}
           </div>
 
-          <p style={{ fontSize: '11px', color: '#333', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>
+          <p style={{ fontSize: '11px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>
             Live 3D viz
           </p>
           <Chart3D />
         </section>
 
         {/* ABOUT */}
-        <section id="about" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
-          <p style={{ fontSize: '11px', color: '#f0a500', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>About</p>
+        <section id="about" style={{ padding: '80px 0', borderTop: '0.5px solid var(--border)' }}>
+          <p style={{ fontSize: '11px', color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>About</p>
           <h2 style={{ fontSize: '36px', fontWeight: 700, marginBottom: '24px', maxWidth: '640px', lineHeight: 1.2 }}>
             My journey through Analytics.
           </h2>
-          <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
+          <p style={{ fontSize: '16px', color: 'var(--text-secondary)', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
             Senior Analytics Engineer with 4+ years of experience building scalable data models and production-grade
             analytics solutions in healthcare and enterprise environments. Specialized in SQL, dbt, Looker, Power BI, Qlik,
             BigQuery, and Airflow.
           </p>
-          <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
+          <p style={{ fontSize: '16px', color: 'var(--text-secondary)', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
             I transitioned into data by self-learning SQL and analytics, which led to a BI Developer role
             at Globemed Group — building ETL pipelines and dashboards across HR, finance, and operations.
           </p>
-          <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
+          <p style={{ fontSize: '16px', color: 'var(--text-secondary)', maxWidth: '600px', lineHeight: 1.8, marginBottom: '16px' }}>
             Currently at Cardinal Health designing executive-level Looker dashboards and data models focused on patient safety and financial performance. In parallel, I designed and built the full data layer for ADREA, an IoT-based equestrian facility management platform, from ERD design through Metabase dashboard delivery.
           </p>
-          <p style={{ fontSize: '16px', color: '#555', maxWidth: '600px', lineHeight: 1.8, marginBottom: '0' }}>
+          <p style={{ fontSize: '16px', color: 'var(--text-secondary)', maxWidth: '600px', lineHeight: 1.8, marginBottom: '0' }}>
             Fluent in English, French, and Arabic — currently learning Czech ahead of my MSc in Business Analytics in Prague (Sept 2025).
           </p>
         </section>
 
         {/* STACK */}
-        <section id="stack" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
-          <p style={{ fontSize: '11px', color: '#f0a500', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Stack</p>
+        <section id="stack" style={{ padding: '80px 0', borderTop: '0.5px solid var(--border)' }}>
+          <p style={{ fontSize: '11px', color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Stack</p>
           <h2 style={{ fontSize: '36px', fontWeight: 700, marginBottom: '40px' }}>Tools of the trade.</h2>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
@@ -175,20 +175,20 @@ export default function Home() {
                 gap: '24px',
                 alignItems: 'center',
                 padding: '20px 0',
-                borderBottom: '0.5px solid #1a1a1a',
+                borderBottom: '0.5px solid var(--border-subtle)',
               }}>
-                <div style={{ fontSize: '11px', color: '#f0a500', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                <div style={{ fontSize: '11px', color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
                   {group.cat}
                 </div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                   {group.tools.map(tool => (
                     <span key={tool} style={{
-                      background: '#0f0f0f',
-                      border: '0.5px solid #1e1e1e',
+                      background: 'var(--bg-card)',
+                      border: '0.5px solid var(--border)',
                       borderRadius: '8px',
                       padding: '8px 16px',
                       fontSize: '13px',
-                      color: '#ccc',
+                      color: 'var(--text-tag)',
                     }}>
                       {tool}
                     </span>
@@ -200,8 +200,8 @@ export default function Home() {
         </section>
 
         {/* EXPERIENCE */}
-        <section id="experience" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
-          <p style={{ fontSize: '11px', color: '#f0a500', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Experience</p>
+        <section id="experience" style={{ padding: '80px 0', borderTop: '0.5px solid var(--border)' }}>
+          <p style={{ fontSize: '11px', color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Experience</p>
           <h2 style={{ fontSize: '36px', fontWeight: 700, marginBottom: '48px' }}>Where I've worked.</h2>
 
           {[
@@ -255,27 +255,28 @@ export default function Home() {
               gap: '32px',
               marginBottom: '48px',
               paddingBottom: '48px',
-              borderBottom: '0.5px solid #1a1a1a'
+              borderBottom: '0.5px solid var(--border-subtle)'
             }}>
               <div>
-                <div style={{ fontSize: '13px', color: '#444', lineHeight: 1.6 }}>{job.period}</div>
-                <div style={{ fontSize: '13px', color: '#f0a500', marginTop: '4px' }}>{job.company}</div>
+                <div style={{ fontSize: '13px', color: 'var(--text-muted)', lineHeight: 1.6 }}>{job.period}</div>
+                <div style={{ fontSize: '13px', color: 'var(--gold)', marginTop: '4px' }}>{job.company}</div>
               </div>
               <div>
-                <div style={{ fontSize: '18px', fontWeight: 600, color: '#fff', marginBottom: '16px' }}>{job.role}</div>
+                <div style={{ fontSize: '18px', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '16px' }}>{job.role}</div>
                 {job.bullets.map((b, j) => (
                   <div key={j} style={{ display: 'flex', gap: '12px', marginBottom: '10px' }}>
-                    <span style={{ color: '#f0a500', marginTop: '2px', fontSize: '12px' }}>▸</span>
-                    <span style={{ fontSize: '14px', color: '#555', lineHeight: 1.7 }}>{b}</span>
+                    <span style={{ color: 'var(--gold)', marginTop: '2px', fontSize: '12px' }}>▸</span>
+                    <span style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.7 }}>{b}</span>
                   </div>
                 ))}
               </div>
             </div>
           ))}
         </section>
+
         {/* PROJECTS */}
-        <section id="projects" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
-          <p style={{ fontSize: '11px', color: '#f0a500', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Projects</p>
+        <section id="projects" style={{ padding: '80px 0', borderTop: '0.5px solid var(--border)' }}>
+          <p style={{ fontSize: '11px', color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Projects</p>
           <h2 style={{ fontSize: '36px', fontWeight: 700, marginBottom: '48px' }}>What I've shipped at Cardinal Health:</h2>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '48px' }}>
@@ -303,8 +304,8 @@ export default function Home() {
               },
             ].map((project, i) => (
               <div key={i} style={{
-                background: '#0f0f0f',
-                border: '0.5px solid #1e1e1e',
+                background: 'var(--bg-card)',
+                border: '0.5px solid var(--border)',
                 borderRadius: '16px',
                 overflow: 'hidden',
               }}>
@@ -316,15 +317,15 @@ export default function Home() {
                   />
                 </div>
                 <div style={{ padding: '24px 28px' }}>
-                  <div style={{ fontSize: '11px', color: '#f0a500', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{project.company}</div>
-                  <div style={{ fontSize: '18px', fontWeight: 600, color: '#fff', marginBottom: '12px' }}>{project.title}</div>
-                  <div style={{ fontSize: '14px', color: '#555', lineHeight: 1.7, marginBottom: '16px' }}>{project.description}</div>
+                  <div style={{ fontSize: '11px', color: 'var(--gold)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{project.company}</div>
+                  <div style={{ fontSize: '18px', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '12px' }}>{project.title}</div>
+                  <div style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '16px' }}>{project.description}</div>
                   <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
                     {project.tags.map(tag => (
                       <span key={tag} style={{
-                        background: '#1a1200',
-                        border: '0.5px solid #f0a50044',
-                        color: '#f0a500',
+                        background: 'var(--gold-bg)',
+                        border: '0.5px solid var(--gold-dim)',
+                        color: 'var(--gold)',
                         fontSize: '11px',
                         padding: '4px 12px',
                         borderRadius: '20px',
@@ -340,14 +341,14 @@ export default function Home() {
           <h2 style={{ fontSize: '36px', fontWeight: 700, marginTop: '80px', marginBottom: '48px' }}>Personal projects:</h2>
 
           <div style={{
-            background: '#0f0f0f',
-            border: '0.5px solid #1e1e1e',
+            background: 'var(--bg-card)',
+            border: '0.5px solid var(--border)',
             borderRadius: '16px',
             overflow: 'hidden',
           }}>
             {/* Two images side by side */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', borderBottom: '0.5px solid #1e1e1e' }}>
-              <div style={{ borderRight: '0.5px solid #1e1e1e' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', borderBottom: '0.5px solid var(--border)' }}>
+              <div style={{ borderRight: '0.5px solid var(--border)' }}>
                 <img
                   src="/dashboard.png"
                   alt="Garmin Metabase Dashboard"
@@ -363,35 +364,37 @@ export default function Home() {
               </div>
             </div>
             <div style={{ padding: '24px 28px' }}>
-              <div style={{ fontSize: '11px', color: '#f0a500', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Personal Project</div>
-              <div style={{ fontSize: '18px', fontWeight: 600, color: '#fff', marginBottom: '12px' }}>Garmin Training Analytics</div>
-              <div style={{ fontSize: '14px', color: '#555', lineHeight: 1.7, marginBottom: '16px' }}>
+              <div style={{ fontSize: '11px', color: 'var(--gold)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Personal Project</div>
+              <div style={{ fontSize: '18px', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '12px' }}>Garmin Training Analytics</div>
+              <div style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '16px' }}>
                 End-to-end analytics pipeline on personal Garmin Connect data: Python ingestion → Postgres warehouse → dbt transformations → Metabase dashboard, orchestrated with Airflow. Authored 5 dbt models with incremental materialization, custom tests, and source freshness checks. Built a 10-tile dashboard surfacing training trends, recovery signals, and the insight that 55% of running sessions fell into the unproductive "gray zone."
               </div>
               <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center' }}>
                 {['dbt', 'Postgres', 'Python', 'Metabase', 'Airflow', 'Docker'].map(tag => (
                   <span key={tag} style={{
-                    background: '#1a1200',
-                    border: '0.5px solid #f0a50044',
-                    color: '#f0a500',
+                    background: 'var(--gold-bg)',
+                    border: '0.5px solid var(--gold-dim)',
+                    color: 'var(--gold)',
                     fontSize: '11px',
                     padding: '4px 12px',
                     borderRadius: '20px',
                   }}>{tag}</span>
                 ))}
-                <a href="https://github.com/georgeaboujaoudeh/garmin-analytics" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 'auto', fontSize: '12px', color: '#555', textDecoration: 'none', border: '0.5px solid #2a2a2a', padding: '4px 14px', borderRadius: '20px' }}>
+                <a href="https://github.com/georgeaboujaoudeh/garmin-analytics" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 'auto', fontSize: '12px', color: 'var(--text-nav)', textDecoration: 'none', border: '0.5px solid var(--border-btn)', padding: '4px 14px', borderRadius: '20px' }}>
                   GitHub →
                 </a>
               </div>
             </div>
           </div>
         </section>
+
         <div id="terminal"><Terminal /></div>
+
         {/* CONTACT */}
-        <section id="contact" style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
-          <p style={{ fontSize: '11px', color: '#f0a500', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Contact</p>
+        <section id="contact" style={{ padding: '80px 0', borderTop: '0.5px solid var(--border)' }}>
+          <p style={{ fontSize: '11px', color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Contact</p>
           <h2 style={{ fontSize: '36px', fontWeight: 700, marginBottom: '12px' }}>Let's work together.</h2>
-          <p style={{ fontSize: '16px', color: '#555', marginBottom: '40px' }}>Open to opportunities, collaborations, and interesting problems.</p>
+          <p style={{ fontSize: '16px', color: 'var(--text-secondary)', marginBottom: '40px' }}>Open to opportunities, collaborations, and interesting problems.</p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <a href="mailto:georgeaboujaoudeh@outlook.com" style={{
               background: '#f0a500',
@@ -406,14 +409,14 @@ export default function Home() {
             </a>
             <a href="https://www.linkedin.com/in/george-abou-jaoude-7866181b3/" target="_blank" style={{
               background: 'transparent',
-              color: '#666',
-              border: '0.5px solid #2a2a2a',
+              color: 'var(--text-nav)',
+              border: '0.5px solid var(--border-btn)',
               padding: '12px 28px',
               borderRadius: '8px',
               fontSize: '14px',
               textDecoration: 'none'
             }}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#666" style={{ marginRight: '8px', verticalAlign: 'middle' }}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style={{ marginRight: '8px', verticalAlign: 'middle' }}>
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
               </svg>
               LinkedIn
@@ -422,9 +425,9 @@ export default function Home() {
         </section>
 
         {/* FOOTER */}
-        <footer style={{ padding: '32px 0', borderTop: '0.5px solid #1e1e1e', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <span style={{ fontSize: '13px', color: '#333' }}>© 2026 George Abou Jaoude</span>
-          <span style={{ fontSize: '13px', color: '#333' }}>Beirut, Lebanon</span>
+        <footer style={{ padding: '32px 0', borderTop: '0.5px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <span style={{ fontSize: '13px', color: 'var(--text-faint)' }}>© 2026 George Abou Jaoude</span>
+          <span style={{ fontSize: '13px', color: 'var(--text-faint)' }}>Beirut, Lebanon</span>
         </footer>
       </div>
     </main>

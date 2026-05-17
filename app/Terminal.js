@@ -99,8 +99,8 @@ useEffect(() => {
   };
 
   return (
-    <section style={{ padding: '80px 0', borderTop: '0.5px solid #1e1e1e' }}>
-      <p style={{ fontSize: '11px', color: '#f0a500', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Terminal</p>
+    <section style={{ padding: '80px 0', borderTop: '0.5px solid var(--border)' }}>
+      <p style={{ fontSize: '11px', color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>Terminal</p>
       <h2 style={{ fontSize: '36px', fontWeight: 700, marginBottom: '32px' }}>Prefer the terminal?</h2>
 
       <div

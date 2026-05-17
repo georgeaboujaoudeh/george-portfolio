@@ -10,9 +10,43 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
+html.dark {
+  --gold: #f0a500;
+  --gold-dim: rgba(240, 165, 0, 0.27);
+  --gold-bg: #1a1200;
+  --gold-border: #f0a500;
+  --bg-card: #0f0f0f;
+  --border: #1e1e1e;
+  --border-subtle: #1a1a1a;
+  --border-btn: #2a2a2a;
+  --text-primary: #ffffff;
+  --text-secondary: #555555;
+  --text-muted: #444444;
+  --text-faint: #333333;
+  --text-nav: #666666;
+  --text-tag: #cccccc;
+}
+
 html.dark body {
   background: #0a0a0a;
   color: #ffffff;
+}
+
+html.light {
+  --gold: #9a6400;
+  --gold-dim: rgba(154, 100, 0, 0.22);
+  --gold-bg: #fef0cc;
+  --gold-border: #c47900;
+  --bg-card: #e6e2d8;
+  --border: #ccc8bc;
+  --border-subtle: #d0ccbf;
+  --border-btn: #b0ab9e;
+  --text-primary: #111111;
+  --text-secondary: #555555;
+  --text-muted: #666666;
+  --text-faint: #888888;
+  --text-nav: #444444;
+  --text-tag: #2a2720;
 }
 
 html.light body {
