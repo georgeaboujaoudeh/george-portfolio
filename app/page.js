@@ -407,7 +407,7 @@ export default function Home() {
             }}>
               Send Email
             </a>
-            <a href="https://www.linkedin.com/in/george-abou-jaoude-7866181b3/" target="_blank" style={{
+            <a href="https://www.linkedin.com/in/george-abou-jaoude/" target="_blank" style={{
               background: 'transparent',
               color: 'var(--text-nav)',
               border: '0.5px solid var(--border-btn)',

@@ -53,7 +53,7 @@ const COMMANDS = {
   ],
   contact: () => [
     'Email:    georgeaboujaoudeh@outlook.com',
-    'LinkedIn: linkedin.com/in/george-abou-jaoude-7866181b3',
+    'LinkedIn: linkedin.com/in/george-abou-jaoude',
     'Phone: +96176545531',
     'Location: Beirut, Lebanon',
   ],
